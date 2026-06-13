@@ -5,6 +5,7 @@
     "papaparse": "^5.5.3",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
+    "recharts": "^3.8.1",
     "vite": "^8.0.16"
   },
   "scripts": {

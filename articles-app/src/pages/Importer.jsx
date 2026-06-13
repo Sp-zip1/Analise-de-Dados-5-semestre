@@ -93,7 +93,8 @@ export default function Importer() {
                 .insert([{ id: uid, nome, nome_completo: fullName }]).select('id')
               if (!aErr) { authorId = aData[0].id; authorCache[key] = authorId; s.authors++ }
             }
-            if (authorId) await supabase.from('article_author').insert([{ id_article: articleId, id_author: authorId }])
+            if (authorId) await supabase.from('article_author')
+              .insert([{ id_article: articleId, id_author: authorId }], { ignoreDuplicates: true })
           }
         }
 
@@ -108,7 +109,8 @@ export default function Importer() {
               const { data: kData, error: kErr } = await supabase.from('keywords').insert([{ keyword: kw }]).select('id')
               if (!kErr) { kwId = kData[0].id; kwCache[key] = kwId; s.keywords++ }
             }
-            if (kwId) await supabase.from('article_keywords').insert([{ id_article: articleId, id_keywords: kwId }])
+            if (kwId) await supabase.from('article_keywords')
+              .insert([{ id_article: articleId, id_keywords: kwId }], { ignoreDuplicates: true })
           }
         }
 

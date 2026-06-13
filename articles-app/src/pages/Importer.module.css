@@ -3,9 +3,9 @@
 .step:not(:last-child)::after { content: ''; position: absolute; top: 16px; left: calc(50% + 20px); right: calc(-50% + 20px); height: 2px; background: var(--border); z-index: 0; }
 .circle { width: 34px; height: 34px; border-radius: 50%; border: 2px solid var(--border); background: var(--bg-card); display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 0.8rem; color: var(--muted); position: relative; z-index: 1; transition: all 0.2s; }
 .step span { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); text-align: center; }
-.active .circle { border-color: var(--accent); background: var(--accent); color: #fff; }
-.active span { color: var(--accent); }
-.done .circle { border-color: var(--green); background: var(--green); color: #fff; }
+.active .circle { border-color: #f89254; background: #f89254; color: #fff; }
+.active span { color: #f89254; }
+.done .circle { border-color: #8da249; background: #8da249; color: #fff; }
 
 .drop { border: 2px dashed var(--border); border-radius: var(--radius); padding: 52px 20px; text-align: center; cursor: pointer; transition: all 0.2s; background: #fdfcfa; margin-top: 16px; }
 .drop:hover, .over { border-color: var(--accent); background: var(--accent-soft); }
@@ -27,10 +27,10 @@
 
 .progWrap { margin: 16px 0 18px; }
 .progBg { background: #f0ede6; border-radius: 99px; height: 12px; overflow: hidden; }
-.progFill { height: 100%; background: linear-gradient(90deg, var(--accent), #e74c3c); border-radius: 99px; transition: width 0.25s; }
+.progFill { height: 100%; background: linear-gradient(90deg, #f89254, #e07a3c); border-radius: 99px; transition: width 0.25s; }
 .progTxt { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted); margin-top: 7px; display: flex; justify-content: space-between; }
 
-.log { background: #111827; border-radius: var(--radius); padding: 16px; max-height: 300px; overflow-y: auto; font-family: 'DM Mono', monospace; font-size: 0.73rem; line-height: 1.8; }
+.log { background: #1f281a; border-radius: var(--radius); padding: 16px; max-height: 300px; overflow-y: auto; font-family: 'DM Mono', monospace; font-size: 0.73rem; line-height: 1.8; }
 .logLine { display: flex; gap: 10px; }
 .logTime { color: #4b5563; flex-shrink: 0; }
 .log_ok   { color: #4ade80; }

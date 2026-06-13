@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* ── Paleta principal: café/natureza ── */
+  --bg:            #fbe1b5;   /* Navajo White — fundo geral */
+  --bg-card:       #fef6e8;   /* Navajo White claro — cards */
+  --sidebar:       #1f281a;   /* Regent Blue — sidebar */
+
+  /* Acento principal: Faded Orange */
+  --accent:        #f89254;
+  --accent-soft:   #fde8d4;
+  --accent-hover:  #e07a3c;
+
+  /* Azul: Limed Spruce */
+  --blue:          #2e434f;
+  --blue-soft:     #d6e4ea;
+
+  /* Verde: Asparagus */
+  --green:         #8da249;
+  --green-soft:    #eaf0d8;
+
+  --text:          #1f281a;   /* Regent Blue escuro */
+  --muted:         #4a5e48;
+  --light:         #8da249;
+  --border:        #e8d8b0;
+  --border-strong: #d4bc88;
+  --shadow:        0 1px 8px rgba(31,40,26,.07), 0 2px 16px rgba(31,40,26,.04);
+  --shadow-lg:     0 8px 32px rgba(31,40,26,.14);
+  --radius:        10px;
+  --sidebar-w:     224px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 { font-family: 'DM Serif Display', serif; }
+code { font-family: 'DM Mono', monospace; }
+
+a { color: var(--blue); }
+a:hover { text-decoration: underline; }
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 3px; }
