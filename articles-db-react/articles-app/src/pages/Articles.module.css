@@ -1,0 +1,22 @@
+.artTitle { font-family: 'DM Serif Display', serif; font-size: 1.05rem; margin-bottom: 5px; line-height: 1.4; }
+.artMeta  { display: flex; gap: 7px; flex-wrap: wrap; margin-bottom: 6px; }
+.artAbstract {
+  font-size: 0.83rem; color: var(--muted); line-height: 1.6; margin-top: 8px;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+.formGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.span2 { grid-column: span 2; }
+.formActions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 22px; }
+.detailRow { display: flex; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 0.875rem; }
+.detailRow:last-of-type { border-bottom: none; }
+.detailLabel {
+  font-family: 'DM Mono', monospace; font-size: 0.66rem; letter-spacing: 0.07em;
+  text-transform: uppercase; color: var(--muted); min-width: 120px; padding-top: 2px; flex-shrink: 0;
+}
+.tagWrap { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.deleteBtn {
+  background: none; border: none; color: #dc2626; font-family: 'Inter',sans-serif;
+  font-size: 0.83rem; font-weight: 600; cursor: pointer; padding: 6px 12px; border-radius: 7px;
+}
+.deleteBtn:hover { background: #fef2f2; }
+.deleteBtn:disabled { opacity: 0.5; cursor: not-allowed; }
