@@ -5,16 +5,16 @@
   margin-bottom: 20px;
 }
 .statCard {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
+  background: #042C8F;
+  border: none;
   border-radius: var(--radius);
   padding: 18px 20px;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-lg);
 }
 .statNum {
   font-family: 'DM Serif Display', serif;
   font-size: 2.2rem;
-  color: var(--accent);
+  color: #BBE11A;   /* Pear */
   line-height: 1;
 }
 .statLabel {
@@ -22,7 +22,7 @@
   font-size: 0.65rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: #C1E5FB;   /* Morning Dew */
   margin-top: 6px;
 }
 
@@ -34,12 +34,10 @@
   margin-bottom: 16px;
   min-width: 0;
 }
-.chartsRow > * {
-  min-width: 0;
-}
+.chartsRow > * { min-width: 0; }
 .chartCard {
-  background: #fef6e8;
-  border: 1px solid var(--border);
+  background: #ffffff;
+  border: 1.5px solid #C1E5FB;  /* Morning Dew */
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 20px;
@@ -49,7 +47,7 @@
   font-size: 0.68rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: #042C8F;
   margin-bottom: 16px;
 }
 .noData {
@@ -57,30 +55,30 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  color: var(--light);
+  color: #86D0FD;
   font-size: 0.85rem;
   font-family: 'DM Mono', monospace;
 }
 .tooltip {
-  background: #1f281a;
+  background: #042C8F;
   border: none;
   border-radius: 7px;
   padding: 9px 13px;
   font-size: 0.82rem;
-  color: #fbe1b5;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(4,44,143,0.25);
 }
 .tooltipLabel {
   font-family: 'DM Mono', monospace;
   font-size: 0.7rem;
-  color: #8da249;
+  color: #BBE11A;   /* Pear */
   margin-bottom: 4px;
 }
 
 /* RECENT */
 .recentItem {
   padding: 11px 0;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid #C1E5FB;
   cursor: pointer;
   transition: opacity 0.15s;
 }
@@ -91,5 +89,6 @@
   font-size: 0.95rem;
   margin-bottom: 5px;
   line-height: 1.4;
+  color: #042C8F;
 }
 .recentMeta { display: flex; gap: 6px; flex-wrap: wrap; }

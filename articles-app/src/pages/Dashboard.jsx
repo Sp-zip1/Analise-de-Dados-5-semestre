@@ -7,7 +7,7 @@ import {
 } from 'recharts'
 import styles from './Dashboard.module.css'
 
-const COLORS = ['#f89254','#8da249','#2e434f','#1f281a','#4891e7','#bbd11a','#86d0fd','#e8f957']
+const COLORS = ['#4891E7','#BBE11A','#86D0FD','#042C8F','#C1E5FB','#E8F957','#4891e7','#BBE11A']
 
 /* Hook que retorna as dimensões reais do container */
 function useSize(ref) {
@@ -154,7 +154,7 @@ export default function Dashboard({ onNavigate }) {
                 <XAxis dataKey="year" tick={tickStyle} />
                 <YAxis tick={tickStyle} allowDecimals={false} />
                 <Tooltip content={<TT />} />
-                <Bar dataKey="count" name="Artigos" fill="#f89254" radius={[4,4,0,0]} />
+                <Bar dataKey="count" name="Artigos" fill="#4891E7" radius={[4,4,0,0]} />
               </BarChart>
           }
         </ChartCard>
@@ -183,7 +183,7 @@ export default function Dashboard({ onNavigate }) {
                 <XAxis type="number" tick={tickStyleSm} allowDecimals={false} />
                 <YAxis dataKey="name" type="category" width={135} tick={tickStyleSm} />
                 <Tooltip content={<TT />} />
-                <Bar dataKey="count" name="Artigos" fill="#2e434f" radius={[0,4,4,0]} />
+                <Bar dataKey="count" name="Artigos" fill="#042C8F" radius={[0,4,4,0]} />
               </BarChart>
           }
         </ChartCard>
@@ -196,7 +196,7 @@ export default function Dashboard({ onNavigate }) {
                 <XAxis type="number" tick={tickStyleSm} allowDecimals={false} />
                 <YAxis dataKey="name" type="category" width={120} tick={tickStyleSm} />
                 <Tooltip content={<TT />} />
-                <Bar dataKey="count" name="Artigos" fill="#8da249" radius={[0,4,4,0]} />
+                <Bar dataKey="count" name="Artigos" fill="#BBE11A" radius={[0,4,4,0]} />
               </BarChart>
           }
         </ChartCard>

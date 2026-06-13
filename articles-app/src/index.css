@@ -3,31 +3,32 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  /* ── Paleta principal: café/natureza ── */
-  --bg:            #fbe1b5;   /* Navajo White — fundo geral */
-  --bg-card:       #fef6e8;   /* Navajo White claro — cards */
-  --sidebar:       #1f281a;   /* Regent Blue — sidebar */
+  /* ── Paleta 1: azul/verde vibrante ── */
+  --bg:            #f7faff;   /* branco levemente azulado */
+  --bg-card:       #ffffff;
 
-  /* Acento principal: Faded Orange */
-  --accent:        #f89254;
-  --accent-soft:   #fde8d4;
-  --accent-hover:  #e07a3c;
+  --sidebar:       #042C8F;   /* Smalt */
 
-  /* Azul: Limed Spruce */
-  --blue:          #2e434f;
-  --blue-soft:     #d6e4ea;
+  /* Acento principal: Pear (verde limão) */
+  --accent:        #BBE11A;
+  --accent-soft:   #f2fac0;
+  --accent-hover:  #a0c914;
 
-  /* Verde: Asparagus */
-  --green:         #8da249;
-  --green-soft:    #eaf0d8;
+  /* Azul médio: Havelock */
+  --blue:          #4891E7;
+  --blue-soft:     #ddeeff;
 
-  --text:          #1f281a;   /* Regent Blue escuro */
-  --muted:         #4a5e48;
-  --light:         #8da249;
-  --border:        #e8d8b0;
-  --border-strong: #d4bc88;
-  --shadow:        0 1px 8px rgba(31,40,26,.07), 0 2px 16px rgba(31,40,26,.04);
-  --shadow-lg:     0 8px 32px rgba(31,40,26,.14);
+  /* Azul claro: Celestial */
+  --green:         #86D0FD;
+  --green-soft:    #e0f5ff;
+
+  --text:          #042C8F;   /* Smalt */
+  --muted:         #3a5a9a;
+  --light:         #7a9fd0;
+  --border:        #c1e5fb;   /* Morning Dew */
+  --border-strong: #86D0FD;
+  --shadow:        0 1px 8px rgba(4,44,143,.07), 0 2px 16px rgba(4,44,143,.04);
+  --shadow-lg:     0 8px 32px rgba(4,44,143,.13);
   --radius:        10px;
   --sidebar-w:     224px;
 }

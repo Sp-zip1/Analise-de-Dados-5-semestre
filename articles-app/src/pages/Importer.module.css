@@ -3,19 +3,19 @@
 .step:not(:last-child)::after { content: ''; position: absolute; top: 16px; left: calc(50% + 20px); right: calc(-50% + 20px); height: 2px; background: var(--border); z-index: 0; }
 .circle { width: 34px; height: 34px; border-radius: 50%; border: 2px solid var(--border); background: var(--bg-card); display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 0.8rem; color: var(--muted); position: relative; z-index: 1; transition: all 0.2s; }
 .step span { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); text-align: center; }
-.active .circle { border-color: #f89254; background: #f89254; color: #fff; }
-.active span { color: #f89254; }
-.done .circle { border-color: #8da249; background: #8da249; color: #fff; }
+.active .circle { border-color: #4891E7; background: #4891E7; color: #fff; }
+.active span { color: #4891E7; }
+.done .circle { border-color: #BBE11A; background: #BBE11A; color: #fff; }
 
 .drop { border: 2px dashed var(--border); border-radius: var(--radius); padding: 52px 20px; text-align: center; cursor: pointer; transition: all 0.2s; background: #fdfcfa; margin-top: 16px; }
-.drop:hover, .over { border-color: var(--accent); background: var(--accent-soft); }
+.drop:hover, .over { border-color: #4891E7; background: #f2fac0; }
 .dropIcon { font-size: 2.5rem; margin-bottom: 12px; }
 .drop p { color: var(--muted); font-size: 0.92rem; }
 .drop small { font-family: 'DM Mono', monospace; font-size: 0.68rem; color: var(--light); display: block; margin-top: 5px; }
 
 .previewBadges { display: flex; gap: 8px; margin-bottom: 14px; }
-.pbadge { font-family: 'DM Mono', monospace; font-size: 0.68rem; padding: 3px 10px; border-radius: 20px; background: var(--accent-soft); color: var(--accent); }
-.blue { background: var(--blue-soft); color: var(--blue); }
+.pbadge { font-family: 'DM Mono', monospace; font-size: 0.68rem; padding: 3px 10px; border-radius: 20px; background: #f2fac0; color: #4891E7; }
+.blue { background: #ddeeff; color: #4891E7; }
 
 .tableWrap { overflow-x: auto; border-radius: var(--radius); border: 1px solid var(--border); max-height: 280px; overflow-y: auto; }
 .table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
@@ -27,10 +27,10 @@
 
 .progWrap { margin: 16px 0 18px; }
 .progBg { background: #f0ede6; border-radius: 99px; height: 12px; overflow: hidden; }
-.progFill { height: 100%; background: linear-gradient(90deg, #f89254, #e07a3c); border-radius: 99px; transition: width 0.25s; }
+.progFill { height: 100%; background: linear-gradient(90deg, #4891E7, #042C8F); border-radius: 99px; transition: width 0.25s; }
 .progTxt { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted); margin-top: 7px; display: flex; justify-content: space-between; }
 
-.log { background: #1f281a; border-radius: var(--radius); padding: 16px; max-height: 300px; overflow-y: auto; font-family: 'DM Mono', monospace; font-size: 0.73rem; line-height: 1.8; }
+.log { background: #042C8F; border-radius: var(--radius); padding: 16px; max-height: 300px; overflow-y: auto; font-family: 'DM Mono', monospace; font-size: 0.73rem; line-height: 1.8; }
 .logLine { display: flex; gap: 10px; }
 .logTime { color: #4b5563; flex-shrink: 0; }
 .log_ok   { color: #4ade80; }
@@ -40,5 +40,5 @@
 
 .sumGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; }
 .sumCard { background: var(--bg); border-radius: 8px; padding: 14px 16px; border: 1px solid var(--border); }
-.sumN { font-family: 'DM Serif Display', serif; font-size: 1.9rem; color: var(--accent); line-height: 1; }
+.sumN { font-family: 'DM Serif Display', serif; font-size: 1.9rem; color: #4891E7; line-height: 1; }
 .sumL { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
