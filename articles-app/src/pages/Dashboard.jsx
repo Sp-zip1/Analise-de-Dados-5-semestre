@@ -204,28 +204,44 @@ export default function Dashboard({ onNavigate }) {
 
       {/* ROW 3 */}
       <div className={styles.chartsRow}>
-        <ChartCard title="Idiomas" height={220}>
+        <ChartCard title="Idiomas" height={340}>
           {(w, h) => byLang.length === 0
             ? <div className={styles.noData}>Sem dados</div>
             : <PieChart width={w} height={h}>
-                <Pie data={byLang} dataKey="value" nameKey="name" cx="50%" cy="45%" innerRadius={45} outerRadius={72} paddingAngle={3}>
+                <Pie data={byLang} dataKey="value" nameKey="name" cx="50%" cy="32%" innerRadius={42} outerRadius={65} paddingAngle={3}>
                   {byLang.map((_, i) => <Cell key={i} fill={COLORS[i % COLORS.length]} />)}
                 </Pie>
                 <Tooltip content={<TT />} />
-                <Legend iconSize={9} iconType="circle" formatter={v => <span style={{ fontSize: 10, fontFamily: 'DM Mono' }}>{v}</span>} />
+                <Legend
+                  iconSize={8}
+                  iconType="circle"
+                  layout="vertical"
+                  align="center"
+                  verticalAlign="bottom"
+                  wrapperStyle={{ paddingTop: 12, maxHeight: 130, overflowY: 'auto', fontSize: 10, fontFamily: 'DM Mono, monospace', lineHeight: '1.8', width: '100%' }}
+                  formatter={v => <span style={{ fontSize: 10, fontFamily: 'DM Mono', color: '#3a5a9a' }}>{v}</span>}
+                />
               </PieChart>
           }
         </ChartCard>
 
-        <ChartCard title="Tipo de Acesso" height={220}>
+        <ChartCard title="Tipo de Acesso" height={340}>
           {(w, h) => byAccess.length === 0
             ? <div className={styles.noData}>Sem dados</div>
             : <PieChart width={w} height={h}>
-                <Pie data={byAccess} dataKey="value" nameKey="name" cx="50%" cy="45%" innerRadius={45} outerRadius={72} paddingAngle={3}>
+                <Pie data={byAccess} dataKey="value" nameKey="name" cx="50%" cy="32%" innerRadius={42} outerRadius={65} paddingAngle={3}>
                   {byAccess.map((_, i) => <Cell key={i} fill={COLORS[i % COLORS.length]} />)}
                 </Pie>
                 <Tooltip content={<TT />} />
-                <Legend iconSize={9} iconType="circle" formatter={v => <span style={{ fontSize: 10, fontFamily: 'DM Mono' }}>{v}</span>} />
+                <Legend
+                  iconSize={8}
+                  iconType="circle"
+                  layout="vertical"
+                  align="center"
+                  verticalAlign="bottom"
+                  wrapperStyle={{ paddingTop: 12, maxHeight: 130, overflowY: 'auto', fontSize: 10, fontFamily: 'DM Mono, monospace', lineHeight: '1.8', width: '100%' }}
+                  formatter={v => <span style={{ fontSize: 10, fontFamily: 'DM Mono', color: '#3a5a9a' }}>{v}</span>}
+                />
               </PieChart>
           }
         </ChartCard>
